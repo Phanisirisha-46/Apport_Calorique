@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Profile</title>
+    <style>
+    /* background */
+    .bg{
+    width: 100%; 
+    height: 100%; 
+    position: relative; 
+    background: white;
+    }
+    /* the black strip */
+    .strip{
+    width: 100%;
+    height: 40px; 
+    left: 0px; 
+    top: 0px; 
+    position: absolute; 
+    background: #171616;
+    }
+    /* the blue box */
+    .box{
+    width: 900px; 
+    height: 550px; 
+    left: 225px; 
+    right:100px;
+    top: 60px; 
+    position: absolute; 
+    background: #C8E7ED; 
+    border-radius: 26px;
+    }
+    /* the personal details */
+    .profile
+    {
+    width: 603px;
+    height: 109px; 
+    left: 350px; 
+    top: -20px; 
+    position: absolute; 
+    text-align: center;
+    color: black; 
+    font-size: 64px; 
+    font-family: Oswald;
+    font-weight: 600; 
+    text-transform: capitalize; 
+    word-wrap: break-word;
+    }
+    /* the firstname box */
+    .inputbox
+    {
+    width: 400.08px;
+    height: 50.06px; 
+    left: 450.97px; 
+    top: 150.84px; 
+    position: absolute; 
+    border-radius: 8px; 
+    border: 1px rgba(0, 0, 0, 0.33) solid;
+    font-size: 20px; font-family: 
+    Inter; font-weight: 
+    400; word-wrap: break-word;
+    text-align:left;
+    color: rgba(0, 0, 0, 0.33); 
+    
+    }
+      /* input lastname  box */
+    .inbox
+    {width: 400.08px;
+    height: 50.06px; 
+    left: 450.97px; 
+    top:210.84px;
+    position: absolute; 
+    background: #FFFDFD; 
+    border-radius: 8px; 
+    border: 1px rgba(0, 0, 0, 0.33) solid; 
+    position: absolute; 
+    text-align: relative; 
+    color: rgba(0, 0, 0, 0.33); 
+    font-size: 20px; font-family: 
+    Inter; font-weight: 
+    400; word-wrap: break-word; 
+    }
+     /* input height box */
+     .inn
+    {width: 200.08px;
+    height: 50.06px; 
+    left: 450.97px; 
+    top:270.84px;
+    position: absolute; 
+    background: #FFFDFD; 
+    border-radius: 8px; 
+    border: 1px rgba(0, 0, 0, 0.33) solid;
+    position: absolute; 
+    color: rgba(0, 0, 0, 0.33); 
+    font-size: 20px; font-family: 
+    Inter; font-weight: 
+    400; word-wrap: break-word; opacity: 1.00;
+    }
+    /* weight input box */
+    .innn
+    {width: 180.08px;
+    height: 48.06px; 
+    left: 670.97px; 
+    top:270.84px;
+    position: absolute; 
+    background: #FFFDFD; 
+    border-radius: 8px; 
+    border: 1px rgba(0, 0, 0, 0.33) solid;
+    position: absolute; 
+    color: rgba(0, 0, 0, 0.33); 
+    font-size: 20px; font-family: 
+    Inter; font-weight: 
+    400; word-wrap: break-word; opacity: 1.00;
+    }
+    /* BMI input box */
+    .take
+    {width:395.08px;
+    height: 50.06px; 
+    left:450.97px; 
+    top:330.84px;
+    position: absolute; 
+    background: #FFFDFD; 
+    border-radius: 8px; 
+    border: 1px rgba(0, 0, 0, 0.33) solid;
+    position: absolute; 
+    color: rgba(0, 0, 0, 0.33); 
+    font-size: 20px; font-family: 
+    Inter; font-weight: 
+    400; word-wrap: break-word;
+    opacity: 1.00
+    }
+    /* the target box */
+    .take_target
+    {width:395.08px;
+    height: 50.06px; 
+    left:450.97px; 
+    top:400.84px;
+    position: absolute; 
+    background: #FFFDFD; 
+    border-radius: 8px; 
+    border: 1px rgba(0, 0, 0, 0.33) solid; 
+    position: absolute; 
+    color: rgba(0, 0, 0, 0.33); 
+    font-size: 20px; font-family: 
+    Inter; font-weight: 
+    400; word-wrap: break-word;
+    opacity: 1.00;
+    }
+    /* save */
+    .save_but{width: 183.38px; height: 50px; left: 550px; top: 500.51px; position: absolute; background: #56E5DD; box-shadow: 1px 7px 7px rgba(0, 0, 0, 0.431); border-radius: 10px; border: 2px #81FFF7 solid;}
+    .save{left: 615px; top: 510px; position: absolute; text-align: center; color: black; font-size: 24px; font-family: Inter; font-weight: 400; word-wrap: break-word;}
+   </style>
+</head>
+<body>
+    <div class="bg"></div>
+    <div class="strip"></div>
+    <div class="box"></div>
+    <div class="profile"><h6>Personal Details</h6></div>
+    <div><form>
+      <label  for="First Name">
+      <input   style="color: black" type="text" class="inputbox" name="First Name" placeholder="First Name" required></label>
+  </form></div>
+    <div><form>
+      <label for="Last Name">
+      <input style="color: black" type="text" class="inbox" name="Last Name" placeholder="Last Name" required></label>
+  </form></div>
+    <div ><form>
+      <label for="Height in  Centimeters">
+      <input style="color: black" type="text" class="inn" name="Height in  Centimeters" placeholder="Height in  Centimeters" required></label>
+  </form></div>
+    <div ><form>
+      <label  for="Weight in  Kilograms">
+      <input style="color: black"  type="text" class="innn" name="Weight in  Kilograms" placeholder="Weight in Kilograms" required></label>
+  </form></div>
+    <div ><form>
+      <label for="BMI_">
+      <input style="color: black" type="text" class="take" name="Your BMI" placeholder="Your BMI" required></label>
+  </form></div>
+    <div ><form>
+      <label for="Target">
+      <input style="color: black" type="text" class="take_target" name="Your target" placeholder="Your target" required></label>
+  </form></div>
+    <div class="save_but"></div>
+    <div class="save">Save</div>
+    <div class="main">
+      <a href="C:\Users\Admin\Desktop\calorie_apo\Fityfeed\templates\main.html">Main Page</a>
+    </div>
+
+</body>
+</html>
